@@ -1,0 +1,37 @@
+module pwm_led_fade (
+    input clk,            // Input clock (e.g., 50 MHz)
+    output reg led1,      // PWM output to LED 1
+    output reg led2,      // PWM output to LED 2
+    output reg led3       // PWM output to LED 3
+);
+
+    // PWM parameters
+    reg [7:0] brightness = 0;      // 8-bit brightness (0 to 255)
+    reg direction = 0;             // 0 = increasing, 1 = decreasing
+    reg [15:0] pwm_counter = 0;    // PWM resolution
+    reg [23:0] delay_counter = 0;  // Controls speed of fade
+
+    always @(posedge clk) begin
+        // Delay for fade step (~smooth fading)
+        delay_counter <= delay_counter + 1;
+        if (delay_counter == 500000) begin  // adjust for slower/faster fading
+            delay_counter <= 0;
+            if (direction == 0)
+                brightness <= brightness + 1;
+            else
+                brightness <= brightness - 1;
+
+            if (brightness == 255)
+                direction <= 1;
+            else if (brightness == 0)
+                direction <= 0;
+        end
+
+        // PWM logic
+        pwm_counter <= pwm_counter + 1;
+        led1 <= (pwm_counter < brightness) ? 1 : 0;
+        led2 <= (pwm_counter < brightness) ? 1 : 0;
+        led3 <= (pwm_counter < brightness) ? 1 : 0;
+    end
+
+endmodule
