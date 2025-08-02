@@ -18,7 +18,7 @@ always @(posedge clk) begin
     
     // State machine
     if(enable) begin
-        state <= state + 1;  // Advance state every 0.5s
+        state <= (state == 2'b10) ? 2'b00 : state + 1;
     end
 end
 
