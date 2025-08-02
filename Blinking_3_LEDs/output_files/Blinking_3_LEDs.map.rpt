@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Blinking_3_LEDs
-Sat Aug 02 23:23:02 2025
+Sat Aug 02 18:29:17 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +-----------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat Aug 02 23:23:02 2025           ;
+; Analysis & Synthesis Status ; Successful - Sat Aug 02 18:29:17 2025           ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name               ; Blinking_3_LEDs                                 ;
 ; Top-level Entity Name       ; Blinking_3_LEDs                                 ;
@@ -153,14 +153,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------+
 ; Total logic elements                        ; 63    ;
 ;     -- Combinational with no register       ; 36    ;
-;     -- Register only                        ; 13    ;
-;     -- Combinational with a register        ; 14    ;
+;     -- Register only                        ; 14    ;
+;     -- Combinational with a register        ; 13    ;
 ;                                             ;       ;
 ; Logic element usage by number of LUT inputs ;       ;
 ;     -- 4 input functions                    ; 8     ;
-;     -- 3 input functions                    ; 1     ;
-;     -- 2 input functions                    ; 40    ;
-;     -- 1 input functions                    ; 1     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 39    ;
+;     -- 1 input functions                    ; 2     ;
 ;     -- 0 input functions                    ; 0     ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
@@ -176,8 +176,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; I/O pins                                    ; 4     ;
 ; Maximum fan-out node                        ; CLK   ;
 ; Maximum fan-out                             ; 27    ;
-; Total fan-out                               ; 159   ;
-; Average fan-out                             ; 2.37  ;
+; Total fan-out                               ; 158   ;
+; Average fan-out                             ; 2.36  ;
 +---------------------------------------------+-------+
 
 
@@ -186,8 +186,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name             ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------+--------------+
-; |Blinking_3_LEDs           ; 63 (0)      ; 27           ; 0          ; 4    ; 0            ; 36 (0)       ; 13 (0)            ; 14 (0)           ; 25 (0)          ; 0 (0)      ; |Blinking_3_LEDs                ; work         ;
-;    |led_blink:inst|        ; 63 (63)     ; 27           ; 0          ; 0    ; 0            ; 36 (36)      ; 13 (13)           ; 14 (14)          ; 25 (25)         ; 0 (0)      ; |Blinking_3_LEDs|led_blink:inst ; work         ;
+; |Blinking_3_LEDs           ; 63 (0)      ; 27           ; 0          ; 4    ; 0            ; 36 (0)       ; 14 (0)            ; 13 (0)           ; 25 (0)          ; 0 (0)      ; |Blinking_3_LEDs                ; work         ;
+;    |led_blink:inst|        ; 63 (63)     ; 27           ; 0          ; 0    ; 0            ; 36 (36)      ; 14 (14)           ; 13 (13)          ; 25 (25)         ; 0 (0)      ; |Blinking_3_LEDs|led_blink:inst ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -202,7 +202,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 2     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -213,7 +213,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Aug 02 23:23:01 2025
+    Info: Processing started: Sat Aug 02 18:29:16 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Blinking_3_LEDs -c Blinking_3_LEDs
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file blinking_3_leds.bdf
@@ -229,8 +229,8 @@ Info (21057): Implemented 67 device resources after synthesis - the final resour
     Info (21059): Implemented 3 output pins
     Info (21061): Implemented 63 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4553 megabytes
-    Info: Processing ended: Sat Aug 02 23:23:02 2025
+    Info: Peak virtual memory: 4558 megabytes
+    Info: Processing ended: Sat Aug 02 18:29:17 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

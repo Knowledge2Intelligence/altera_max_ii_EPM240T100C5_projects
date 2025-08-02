@@ -1,5 +1,5 @@
 Fitter report for Blinking_3_LEDs
-Sat Aug 02 23:23:05 2025
+Sat Aug 02 18:29:19 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -56,14 +56,14 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Fitter Summary                                                              ;
 +---------------------------+-------------------------------------------------+
-; Fitter Status             ; Successful - Sat Aug 02 23:23:05 2025           ;
+; Fitter Status             ; Successful - Sat Aug 02 18:29:19 2025           ;
 ; Quartus II 64-Bit Version ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name             ; Blinking_3_LEDs                                 ;
 ; Top-level Entity Name     ; Blinking_3_LEDs                                 ;
 ; Family                    ; MAX II                                          ;
 ; Device                    ; EPM240T100C5                                    ;
 ; Timing Models             ; Final                                           ;
-; Total logic elements      ; 57 / 240 ( 24 % )                               ;
+; Total logic elements      ; 56 / 240 ( 23 % )                               ;
 ; Total pins                ; 4 / 80 ( 5 % )                                  ;
 ; Total virtual pins        ; 0                                               ;
 ; UFM blocks                ; 0 / 1 ( 0 % )                                   ;
@@ -141,28 +141,28 @@ The pin-out file can be found in C:/altera projects/Blinking_3_LEDs/output_files
 +---------------------------------------------+-------------------+
 ; Resource                                    ; Usage             ;
 +---------------------------------------------+-------------------+
-; Total logic elements                        ; 57 / 240 ( 24 % ) ;
-;     -- Combinational with no register       ; 30                ;
+; Total logic elements                        ; 56 / 240 ( 23 % ) ;
+;     -- Combinational with no register       ; 29                ;
 ;     -- Register only                        ; 7                 ;
 ;     -- Combinational with a register        ; 20                ;
 ;                                             ;                   ;
 ; Logic element usage by number of LUT inputs ;                   ;
 ;     -- 4 input functions                    ; 8                 ;
-;     -- 3 input functions                    ; 1                 ;
-;     -- 2 input functions                    ; 40                ;
-;     -- 1 input functions                    ; 1                 ;
+;     -- 3 input functions                    ; 0                 ;
+;     -- 2 input functions                    ; 39                ;
+;     -- 1 input functions                    ; 2                 ;
 ;     -- 0 input functions                    ; 0                 ;
 ;                                             ;                   ;
 ; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 33                ;
+;     -- normal mode                          ; 32                ;
 ;     -- arithmetic mode                      ; 24                ;
-;     -- qfbk mode                            ; 6                 ;
+;     -- qfbk mode                            ; 7                 ;
 ;     -- register cascade mode                ; 0                 ;
 ;     -- synchronous clear/load mode          ; 12                ;
 ;     -- asynchronous clear/load mode         ; 0                 ;
 ;                                             ;                   ;
 ; Total registers                             ; 27 / 240 ( 11 % ) ;
-; Total LABs                                  ; 9 / 24 ( 38 % )   ;
+; Total LABs                                  ; 7 / 24 ( 29 % )   ;
 ; Logic elements in carry chains              ; 25                ;
 ; Virtual pins                                ; 0                 ;
 ; I/O pins                                    ; 4 / 80 ( 5 % )    ;
@@ -172,11 +172,11 @@ The pin-out file can be found in C:/altera projects/Blinking_3_LEDs/output_files
 ; UFM blocks                                  ; 0 / 1 ( 0 % )     ;
 ; Global clocks                               ; 1 / 4 ( 25 % )    ;
 ; JTAGs                                       ; 0 / 1 ( 0 % )     ;
-; Average interconnect usage (total/H/V)      ; 5% / 8% / 1%      ;
-; Peak interconnect usage (total/H/V)         ; 5% / 8% / 1%      ;
+; Average interconnect usage (total/H/V)      ; 4% / 6% / 2%      ;
+; Peak interconnect usage (total/H/V)         ; 4% / 6% / 2%      ;
 ; Maximum fan-out                             ; 27                ;
 ; Highest non-global fan-out                  ; 14                ;
-; Total fan-out                               ; 171               ;
+; Total fan-out                               ; 168               ;
 ; Average fan-out                             ; 2.80              ;
 +---------------------------------------------+-------------------+
 
@@ -341,8 +341,8 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name             ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------+--------------+
-; |Blinking_3_LEDs           ; 57 (0)      ; 27           ; 0          ; 4    ; 0            ; 30 (0)       ; 7 (0)             ; 20 (0)           ; 25 (0)          ; 6 (0)      ; |Blinking_3_LEDs                ; work         ;
-;    |led_blink:inst|        ; 57 (57)     ; 27           ; 0          ; 0    ; 0            ; 30 (30)      ; 7 (7)             ; 20 (20)          ; 25 (25)         ; 6 (6)      ; |Blinking_3_LEDs|led_blink:inst ; work         ;
+; |Blinking_3_LEDs           ; 56 (0)      ; 27           ; 0          ; 4    ; 0            ; 29 (0)       ; 7 (0)             ; 20 (0)           ; 25 (0)          ; 6 (0)      ; |Blinking_3_LEDs                ; work         ;
+;    |led_blink:inst|        ; 56 (56)     ; 27           ; 0          ; 0    ; 0            ; 29 (29)      ; 7 (7)             ; 20 (20)          ; 25 (25)         ; 6 (6)      ; |Blinking_3_LEDs|led_blink:inst ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -359,13 +359,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Control Signals                                                                      ;
-+------+----------+---------+-------+--------+----------------------+------------------+
-; Name ; Location ; Fan-Out ; Usage ; Global ; Global Resource Used ; Global Line Name ;
-+------+----------+---------+-------+--------+----------------------+------------------+
-; CLK  ; PIN_12   ; 27      ; Clock ; yes    ; Global Clock         ; GCLK0            ;
-+------+----------+---------+-------+--------+----------------------+------------------+
++-------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                   ;
++-------------------------+-------------+---------+--------------+--------+----------------------+------------------+
+; Name                    ; Location    ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ;
++-------------------------+-------------+---------+--------------+--------+----------------------+------------------+
+; CLK                     ; PIN_12      ; 27      ; Clock        ; yes    ; Global Clock         ; GCLK0            ;
+; led_blink:inst|Equal0~7 ; LC_X2_Y3_N4 ; 14      ; Clock enable ; no     ; --                   ; --               ;
++-------------------------+-------------+---------+--------------+--------+----------------------+------------------+
 
 
 +---------------------------------------------------------------------+
@@ -384,12 +385,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------+---------+
 ; led_blink:inst|Equal0~7          ; 14      ;
 ; led_blink:inst|Add0~82           ; 5       ;
-; led_blink:inst|Add0~62           ; 5       ;
-; led_blink:inst|Add0~37           ; 5       ;
-; led_blink:inst|Add0~12           ; 5       ;
-; led_blink:inst|state[0]          ; 5       ;
-; led_blink:inst|state[1]          ; 4       ;
+; led_blink:inst|Add0~72           ; 5       ;
+; led_blink:inst|Add0~57           ; 5       ;
+; led_blink:inst|Add0~22           ; 5       ;
 ; led_blink:inst|Add0~112          ; 3       ;
+; led_blink:inst|state[0]          ; 3       ;
 ; led_blink:inst|counter[22]       ; 2       ;
 ; led_blink:inst|counter[21]       ; 2       ;
 ; led_blink:inst|counter[20]       ; 2       ;
@@ -397,18 +397,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; led_blink:inst|counter[19]       ; 2       ;
 ; led_blink:inst|counter[18]       ; 2       ;
 ; led_blink:inst|counter[16]       ; 2       ;
-; led_blink:inst|counter[15]       ; 2       ;
-; led_blink:inst|counter[14]       ; 2       ;
 ; led_blink:inst|counter[0]        ; 2       ;
+; led_blink:inst|counter[1]        ; 2       ;
 ; led_blink:inst|counter[2]        ; 2       ;
-; led_blink:inst|counter[3]        ; 2       ;
-; led_blink:inst|counter[4]        ; 2       ;
 ; led_blink:inst|counter[6]        ; 2       ;
 ; led_blink:inst|counter[7]        ; 2       ;
+; led_blink:inst|counter[4]        ; 2       ;
 ; led_blink:inst|counter[8]        ; 2       ;
+; led_blink:inst|counter[9]        ; 2       ;
 ; led_blink:inst|counter[11]       ; 2       ;
 ; led_blink:inst|counter[12]       ; 2       ;
 ; led_blink:inst|counter[13]       ; 2       ;
+; led_blink:inst|counter[14]       ; 2       ;
+; led_blink:inst|state[1]          ; 2       ;
+; led_blink:inst|Decoder0~0        ; 2       ;
 ; led_blink:inst|Add0~122COUT1_182 ; 1       ;
 ; led_blink:inst|Add0~122          ; 1       ;
 ; led_blink:inst|Add0~120          ; 1       ;
@@ -430,20 +432,18 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; led_blink:inst|Add0~87           ; 1       ;
 ; led_blink:inst|Add0~85           ; 1       ;
 ; led_blink:inst|Add0~80           ; 1       ;
-; led_blink:inst|Add0~77COUT1_170  ; 1       ;
+; led_blink:inst|Add0~77COUT1_146  ; 1       ;
 ; led_blink:inst|Add0~77           ; 1       ;
 ; led_blink:inst|Add0~75           ; 1       ;
-; led_blink:inst|Add0~72COUT1_168  ; 1       ;
-; led_blink:inst|Add0~72           ; 1       ;
 ; led_blink:inst|Add0~70           ; 1       ;
-; led_blink:inst|Add0~67COUT1_146  ; 1       ;
+; led_blink:inst|Add0~67COUT1_148  ; 1       ;
 ; led_blink:inst|Add0~67           ; 1       ;
 ; led_blink:inst|Add0~65           ; 1       ;
+; led_blink:inst|Add0~62COUT1_150  ; 1       ;
+; led_blink:inst|Add0~62           ; 1       ;
 ; led_blink:inst|Add0~60           ; 1       ;
-; led_blink:inst|Add0~57COUT1_148  ; 1       ;
-; led_blink:inst|Add0~57           ; 1       ;
 ; led_blink:inst|Add0~55           ; 1       ;
-; led_blink:inst|Add0~52COUT1_150  ; 1       ;
+; led_blink:inst|Add0~52COUT1_156  ; 1       ;
 ; led_blink:inst|Add0~52           ; 1       ;
 ; led_blink:inst|Add0~50           ; 1       ;
 ; led_blink:inst|Add0~47COUT1_152  ; 1       ;
@@ -452,24 +452,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; led_blink:inst|Add0~42COUT1_154  ; 1       ;
 ; led_blink:inst|Add0~42           ; 1       ;
 ; led_blink:inst|Add0~40           ; 1       ;
+; led_blink:inst|Add0~37COUT1_158  ; 1       ;
+; led_blink:inst|Add0~37           ; 1       ;
 ; led_blink:inst|Add0~35           ; 1       ;
-; led_blink:inst|Add0~32COUT1_156  ; 1       ;
+; led_blink:inst|Add0~32COUT1_160  ; 1       ;
 ; led_blink:inst|Add0~32           ; 1       ;
 ; led_blink:inst|Add0~30           ; 1       ;
-; led_blink:inst|Add0~27COUT1_158  ; 1       ;
+; led_blink:inst|Add0~27COUT1_162  ; 1       ;
 ; led_blink:inst|Add0~27           ; 1       ;
 ; led_blink:inst|Add0~25           ; 1       ;
-; led_blink:inst|Add0~22COUT1_160  ; 1       ;
-; led_blink:inst|Add0~22           ; 1       ;
 ; led_blink:inst|Add0~20           ; 1       ;
-; led_blink:inst|Add0~17COUT1_162  ; 1       ;
+; led_blink:inst|Add0~17COUT1_170  ; 1       ;
 ; led_blink:inst|Add0~17           ; 1       ;
 ; led_blink:inst|Add0~15           ; 1       ;
+; led_blink:inst|Add0~12COUT1_164  ; 1       ;
+; led_blink:inst|Add0~12           ; 1       ;
 ; led_blink:inst|Add0~10           ; 1       ;
-; led_blink:inst|Add0~7COUT1_164   ; 1       ;
+; led_blink:inst|Add0~7COUT1_166   ; 1       ;
 ; led_blink:inst|Add0~7            ; 1       ;
 ; led_blink:inst|Add0~5            ; 1       ;
-; led_blink:inst|Add0~2COUT1_166   ; 1       ;
+; led_blink:inst|Add0~2COUT1_168   ; 1       ;
 ; led_blink:inst|Add0~2            ; 1       ;
 ; led_blink:inst|Add0~0            ; 1       ;
 ; led_blink:inst|counter[23]       ; 1       ;
@@ -477,17 +479,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; led_blink:inst|counter[17]       ; 1       ;
 ; led_blink:inst|Equal0~5          ; 1       ;
 ; led_blink:inst|Equal0~4          ; 1       ;
-; led_blink:inst|counter[1]        ; 1       ;
+; led_blink:inst|counter[3]        ; 1       ;
 ; led_blink:inst|Equal0~3          ; 1       ;
 ; led_blink:inst|counter[5]        ; 1       ;
 ; led_blink:inst|Equal0~2          ; 1       ;
-; led_blink:inst|counter[9]        ; 1       ;
-; led_blink:inst|Equal0~1          ; 1       ;
 ; led_blink:inst|counter[10]       ; 1       ;
+; led_blink:inst|Equal0~1          ; 1       ;
+; led_blink:inst|counter[15]       ; 1       ;
 ; led_blink:inst|Equal0~0          ; 1       ;
 ; led_blink:inst|Decoder0~2        ; 1       ;
 ; led_blink:inst|Decoder0~1        ; 1       ;
-; led_blink:inst|Decoder0~0        ; 1       ;
 +----------------------------------+---------+
 
 
@@ -496,110 +497,116 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-------------------+
 ; Other Routing Resource Type ; Usage             ;
 +-----------------------------+-------------------+
-; C4s                         ; 13 / 784 ( 2 % )  ;
-; Direct links                ; 20 / 888 ( 2 % )  ;
+; C4s                         ; 19 / 784 ( 2 % )  ;
+; Direct links                ; 22 / 888 ( 2 % )  ;
 ; Global clocks               ; 1 / 4 ( 25 % )    ;
-; LAB clocks                  ; 6 / 32 ( 19 % )   ;
-; LUT chains                  ; 1 / 216 ( < 1 % ) ;
-; Local interconnects         ; 69 / 888 ( 8 % )  ;
-; R4s                         ; 45 / 704 ( 6 % )  ;
+; LAB clocks                  ; 4 / 32 ( 13 % )   ;
+; LUT chains                  ; 2 / 216 ( < 1 % ) ;
+; Local interconnects         ; 73 / 888 ( 8 % )  ;
+; R4s                         ; 39 / 704 ( 6 % )  ;
 +-----------------------------+-------------------+
 
 
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 6.33) ; Number of LABs  (Total = 9) ;
+; Number of Logic Elements  (Average = 8.00) ; Number of LABs  (Total = 7) ;
 +--------------------------------------------+-----------------------------+
-; 1                                          ; 2                           ;
-; 2                                          ; 0                           ;
-; 3                                          ; 1                           ;
+; 1                                          ; 0                           ;
+; 2                                          ; 1                           ;
+; 3                                          ; 0                           ;
 ; 4                                          ; 1                           ;
 ; 5                                          ; 0                           ;
 ; 6                                          ; 0                           ;
 ; 7                                          ; 0                           ;
-; 8                                          ; 1                           ;
+; 8                                          ; 0                           ;
 ; 9                                          ; 0                           ;
-; 10                                         ; 4                           ;
+; 10                                         ; 5                           ;
 +--------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 0.89) ; Number of LABs  (Total = 9) ;
+; LAB-wide Signals  (Average = 0.86) ; Number of LABs  (Total = 7) ;
 +------------------------------------+-----------------------------+
-; 1 Clock                            ; 8                           ;
+; 1 Clock                            ; 6                           ;
 +------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 7.00) ; Number of LABs  (Total = 9) ;
+; Number of Signals Sourced  (Average = 9.00) ; Number of LABs  (Total = 7) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 1                           ;
+; 1                                           ; 0                           ;
 ; 2                                           ; 1                           ;
-; 3                                           ; 1                           ;
+; 3                                           ; 0                           ;
 ; 4                                           ; 1                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
 ; 8                                           ; 0                           ;
 ; 9                                           ; 0                           ;
-; 10                                          ; 4                           ;
+; 10                                          ; 3                           ;
 ; 11                                          ; 0                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 1                           ;
+; 12                                          ; 1                           ;
+; 13                                          ; 0                           ;
+; 14                                          ; 0                           ;
+; 15                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 6.11) ; Number of LABs  (Total = 9) ;
+; Number of Signals Sourced Out  (Average = 8.00) ; Number of LABs  (Total = 7) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 1                           ;
+; 1                                               ; 0                           ;
 ; 2                                               ; 1                           ;
-; 3                                               ; 1                           ;
+; 3                                               ; 0                           ;
 ; 4                                               ; 1                           ;
 ; 5                                               ; 0                           ;
 ; 6                                               ; 0                           ;
 ; 7                                               ; 0                           ;
-; 8                                               ; 2                           ;
-; 9                                               ; 1                           ;
+; 8                                               ; 0                           ;
+; 9                                               ; 2                           ;
 ; 10                                              ; 2                           ;
+; 11                                              ; 0                           ;
+; 12                                              ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
-+---------------------------------------------------------------------------+
-; LAB Distinct Inputs                                                       ;
-+---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 8.22) ; Number of LABs  (Total = 9) ;
-+---------------------------------------------+-----------------------------+
-; 0                                           ; 0                           ;
-; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
-; 3                                           ; 1                           ;
-; 4                                           ; 1                           ;
-; 5                                           ; 1                           ;
-; 6                                           ; 0                           ;
-; 7                                           ; 1                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 1                           ;
-; 10                                          ; 0                           ;
-; 11                                          ; 1                           ;
-; 12                                          ; 0                           ;
-; 13                                          ; 0                           ;
-; 14                                          ; 1                           ;
-; 15                                          ; 0                           ;
-; 16                                          ; 0                           ;
-; 17                                          ; 0                           ;
-; 18                                          ; 0                           ;
-; 19                                          ; 1                           ;
-+---------------------------------------------+-----------------------------+
++----------------------------------------------------------------------------+
+; LAB Distinct Inputs                                                        ;
++----------------------------------------------+-----------------------------+
+; Number of Distinct Inputs  (Average = 10.57) ; Number of LABs  (Total = 7) ;
++----------------------------------------------+-----------------------------+
+; 0                                            ; 0                           ;
+; 1                                            ; 0                           ;
+; 2                                            ; 0                           ;
+; 3                                            ; 1                           ;
+; 4                                            ; 0                           ;
+; 5                                            ; 1                           ;
+; 6                                            ; 0                           ;
+; 7                                            ; 0                           ;
+; 8                                            ; 0                           ;
+; 9                                            ; 0                           ;
+; 10                                           ; 1                           ;
+; 11                                           ; 2                           ;
+; 12                                           ; 0                           ;
+; 13                                           ; 1                           ;
+; 14                                           ; 0                           ;
+; 15                                           ; 0                           ;
+; 16                                           ; 0                           ;
+; 17                                           ; 0                           ;
+; 18                                           ; 0                           ;
+; 19                                           ; 0                           ;
+; 20                                           ; 0                           ;
+; 21                                           ; 1                           ;
++----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------+
@@ -666,8 +673,8 @@ Warning (169174): The Reserve All Unused Pins setting has not been specified, an
 Info (144001): Generated suppressed messages file C:/altera projects/Blinking_3_LEDs/output_files/Blinking_3_LEDs.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 4725 megabytes
-    Info: Processing ended: Sat Aug 02 23:23:05 2025
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sat Aug 02 18:29:19 2025
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

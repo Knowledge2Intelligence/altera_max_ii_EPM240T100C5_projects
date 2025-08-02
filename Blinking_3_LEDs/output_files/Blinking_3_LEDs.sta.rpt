@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Blinking_3_LEDs
-Sat Aug 02 23:23:08 2025
+Sat Aug 02 18:29:22 2025
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -87,7 +87,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 115.93 MHz ; 115.93 MHz      ; CLK        ;      ;
+; 117.51 MHz ; 117.51 MHz      ; CLK        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -97,7 +97,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; CLK   ; -7.626 ; -184.470      ;
+; CLK   ; -7.510 ; -180.209      ;
 +-------+--------+---------------+
 
 
@@ -106,7 +106,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------+
 ; Clock ; Slack ; End Point TNS ;
 +-------+-------+---------------+
-; CLK   ; 1.928 ; 0.000         ;
+; CLK   ; 1.078 ; 0.000         ;
 +-------+-------+---------------+
 
 
@@ -136,106 +136,106 @@ No paths to report.
 +--------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                  ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
-; -7.626 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.293      ;
-; -7.499 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[15] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.166      ;
-; -7.476 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.143      ;
-; -7.443 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.110      ;
-; -7.420 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.087      ;
-; -7.387 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.054      ;
-; -7.368 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.035      ;
-; -7.349 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[15] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.016      ;
-; -7.313 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[9]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.980      ;
-; -7.309 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.976      ;
-; -7.293 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.960      ;
-; -7.276 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.943      ;
-; -7.247 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.914      ;
-; -7.237 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.904      ;
-; -7.234 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.901      ;
-; -7.231 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.898      ;
-; -7.218 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.885      ;
-; -7.218 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.885      ;
-; -7.218 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.885      ;
-; -7.217 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.884      ;
-; -7.203 ; led_blink:inst|counter[0]  ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.870      ;
-; -7.197 ; led_blink:inst|counter[0]  ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.864      ;
-; -7.163 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[9]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.830      ;
-; -7.160 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.827      ;
-; -7.159 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.826      ;
-; -7.133 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.800      ;
-; -7.126 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.793      ;
-; -7.117 ; led_blink:inst|counter[15] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.784      ;
-; -7.107 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[15] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.774      ;
-; -7.093 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[15] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.760      ;
-; -7.085 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.752      ;
-; -7.081 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.748      ;
-; -7.075 ; led_blink:inst|counter[14] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.742      ;
-; -7.068 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.735      ;
-; -7.068 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.735      ;
-; -7.067 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.734      ;
-; -7.051 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.718      ;
-; -7.051 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.718      ;
-; -7.037 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.704      ;
-; -7.030 ; led_blink:inst|counter[7]  ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.697      ;
-; -7.024 ; led_blink:inst|counter[7]  ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.691      ;
-; -6.995 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.662      ;
-; -6.981 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.648      ;
-; -6.976 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.643      ;
-; -6.962 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.629      ;
-; -6.960 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.627      ;
-; -6.943 ; led_blink:inst|counter[3]  ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.610      ;
-; -6.937 ; led_blink:inst|counter[3]  ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.604      ;
-; -6.935 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.602      ;
-; -6.934 ; led_blink:inst|counter[15] ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.601      ;
-; -6.921 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[9]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.588      ;
-; -6.917 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.584      ;
-; -6.911 ; led_blink:inst|counter[6]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.578      ;
-; -6.907 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[9]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.574      ;
-; -6.903 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.570      ;
-; -6.901 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.568      ;
-; -6.891 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[15] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.558      ;
-; -6.884 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.551      ;
-; -6.878 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[7]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.545      ;
-; -6.874 ; led_blink:inst|counter[15] ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.541      ;
-; -6.873 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.540      ;
-; -6.870 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.537      ;
-; -6.868 ; led_blink:inst|counter[15] ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.535      ;
-; -6.860 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.527      ;
-; -6.859 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.526      ;
-; -6.859 ; led_blink:inst|counter[15] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.526      ;
-; -6.858 ; led_blink:inst|counter[14] ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.525      ;
-; -6.852 ; led_blink:inst|counter[14] ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.519      ;
-; -6.839 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.506      ;
-; -6.835 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.502      ;
-; -6.826 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.493      ;
-; -6.826 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.493      ;
-; -6.825 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.492      ;
-; -6.811 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.478      ;
-; -6.804 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.471      ;
-; -6.804 ; led_blink:inst|counter[15] ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.471      ;
-; -6.798 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.465      ;
-; -6.796 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.463      ;
-; -6.788 ; led_blink:inst|counter[14] ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.455      ;
-; -6.779 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.446      ;
-; -6.771 ; led_blink:inst|counter[4]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.438      ;
-; -6.769 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[10] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.436      ;
-; -6.760 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.427      ;
-; -6.755 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.422      ;
-; -6.728 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[7]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.395      ;
-; -6.722 ; led_blink:inst|counter[15] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.389      ;
-; -6.709 ; led_blink:inst|counter[15] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.376      ;
-; -6.694 ; led_blink:inst|counter[6]  ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.361      ;
-; -6.693 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.360      ;
-; -6.688 ; led_blink:inst|counter[6]  ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.355      ;
-; -6.687 ; led_blink:inst|counter[6]  ; led_blink:inst|counter[15] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.354      ;
-; -6.687 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.354      ;
-; -6.686 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.353      ;
-; -6.668 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.335      ;
-; -6.659 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.326      ;
-; -6.656 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.323      ;
-; -6.646 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.313      ;
-; -6.640 ; led_blink:inst|counter[12] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.307      ;
-; -6.631 ; led_blink:inst|counter[6]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.298      ;
-; -6.631 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.298      ;
+; -7.510 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.177      ;
+; -7.441 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.108      ;
+; -7.354 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.021      ;
+; -7.337 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 8.004      ;
+; -7.315 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[7]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.982      ;
+; -7.262 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.929      ;
+; -7.237 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[5]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.904      ;
+; -7.187 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.854      ;
+; -7.132 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.799      ;
+; -7.131 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[5]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.798      ;
+; -7.124 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.791      ;
+; -7.123 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.790      ;
+; -7.095 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[10] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.762      ;
+; -7.071 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.738      ;
+; -7.061 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.728      ;
+; -7.050 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[9]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.717      ;
+; -7.050 ; led_blink:inst|counter[19] ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.717      ;
+; -7.044 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[5]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.711      ;
+; -7.002 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.669      ;
+; -6.984 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.651      ;
+; -6.979 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.646      ;
+; -6.977 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.644      ;
+; -6.969 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.636      ;
+; -6.968 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.635      ;
+; -6.964 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.631      ;
+; -6.963 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.630      ;
+; -6.961 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.628      ;
+; -6.936 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.603      ;
+; -6.915 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.582      ;
+; -6.915 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.582      ;
+; -6.912 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.579      ;
+; -6.900 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.567      ;
+; -6.898 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.565      ;
+; -6.882 ; led_blink:inst|counter[11] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.549      ;
+; -6.876 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[7]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.543      ;
+; -6.875 ; led_blink:inst|counter[16] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.542      ;
+; -6.874 ; led_blink:inst|counter[11] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.541      ;
+; -6.873 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.540      ;
+; -6.873 ; led_blink:inst|counter[11] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.540      ;
+; -6.872 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.539      ;
+; -6.867 ; led_blink:inst|counter[16] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.534      ;
+; -6.866 ; led_blink:inst|counter[16] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.533      ;
+; -6.862 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.529      ;
+; -6.850 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.517      ;
+; -6.831 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.498      ;
+; -6.828 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.495      ;
+; -6.823 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.490      ;
+; -6.819 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[15] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.486      ;
+; -6.811 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.478      ;
+; -6.809 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.476      ;
+; -6.808 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.475      ;
+; -6.808 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.475      ;
+; -6.789 ; led_blink:inst|counter[19] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.456      ;
+; -6.789 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[7]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.456      ;
+; -6.779 ; led_blink:inst|counter[21] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.446      ;
+; -6.771 ; led_blink:inst|counter[21] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.438      ;
+; -6.770 ; led_blink:inst|counter[21] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.437      ;
+; -6.763 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.430      ;
+; -6.761 ; led_blink:inst|counter[13] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.428      ;
+; -6.759 ; led_blink:inst|counter[4]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.426      ;
+; -6.757 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.424      ;
+; -6.753 ; led_blink:inst|counter[13] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.420      ;
+; -6.752 ; led_blink:inst|counter[13] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.419      ;
+; -6.751 ; led_blink:inst|counter[4]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.418      ;
+; -6.750 ; led_blink:inst|counter[4]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.417      ;
+; -6.748 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.415      ;
+; -6.746 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.413      ;
+; -6.744 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.411      ;
+; -6.736 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.403      ;
+; -6.727 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.394      ;
+; -6.718 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.385      ;
+; -6.717 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.384      ;
+; -6.714 ; led_blink:inst|counter[11] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.381      ;
+; -6.713 ; led_blink:inst|counter[11] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.380      ;
+; -6.707 ; led_blink:inst|counter[16] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.374      ;
+; -6.706 ; led_blink:inst|counter[16] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.373      ;
+; -6.692 ; led_blink:inst|counter[19] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.359      ;
+; -6.683 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[8]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.350      ;
+; -6.662 ; led_blink:inst|counter[11] ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.329      ;
+; -6.661 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.328      ;
+; -6.656 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[10] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.323      ;
+; -6.655 ; led_blink:inst|counter[16] ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.322      ;
+; -6.652 ; led_blink:inst|counter[7]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.319      ;
+; -6.642 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.309      ;
+; -6.623 ; led_blink:inst|counter[11] ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.290      ;
+; -6.622 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.289      ;
+; -6.622 ; led_blink:inst|counter[11] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.289      ;
+; -6.616 ; led_blink:inst|counter[16] ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.283      ;
+; -6.615 ; led_blink:inst|counter[16] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.282      ;
+; -6.612 ; led_blink:inst|counter[11] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.279      ;
+; -6.611 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[9]  ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.278      ;
+; -6.611 ; led_blink:inst|counter[21] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.278      ;
+; -6.610 ; led_blink:inst|counter[21] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.277      ;
+; -6.605 ; led_blink:inst|counter[16] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.272      ;
+; -6.603 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.270      ;
+; -6.593 ; led_blink:inst|counter[13] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.260      ;
+; -6.592 ; led_blink:inst|counter[13] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.259      ;
+; -6.591 ; led_blink:inst|counter[4]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.258      ;
+; -6.590 ; led_blink:inst|counter[4]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.257      ;
+; -6.569 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[10] ; CLK          ; CLK         ; 1.000        ; 0.000      ; 7.236      ;
 +--------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -244,106 +244,106 @@ No paths to report.
 +-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                  ; To Node                    ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
-; 1.928 ; led_blink:inst|state[0]    ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.149      ;
-; 1.934 ; led_blink:inst|state[0]    ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.155      ;
-; 2.230 ; led_blink:inst|state[1]    ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.451      ;
-; 2.833 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[3]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.054      ;
-; 2.856 ; led_blink:inst|counter[4]  ; led_blink:inst|counter[4]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.077      ;
-; 3.358 ; led_blink:inst|counter[24] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.579      ;
-; 3.360 ; led_blink:inst|counter[24] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.581      ;
-; 3.361 ; led_blink:inst|counter[24] ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.582      ;
-; 3.362 ; led_blink:inst|counter[24] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.583      ;
-; 3.614 ; led_blink:inst|counter[23] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.835      ;
-; 3.617 ; led_blink:inst|counter[23] ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.838      ;
-; 3.618 ; led_blink:inst|counter[23] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.839      ;
-; 3.651 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[4]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.872      ;
-; 3.674 ; led_blink:inst|counter[22] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.895      ;
-; 3.790 ; led_blink:inst|counter[24] ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.011      ;
-; 3.798 ; led_blink:inst|counter[24] ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.019      ;
-; 3.799 ; led_blink:inst|counter[24] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.020      ;
-; 3.832 ; led_blink:inst|counter[21] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.053      ;
-; 3.839 ; led_blink:inst|counter[23] ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.060      ;
-; 3.867 ; led_blink:inst|counter[17] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.088      ;
-; 3.870 ; led_blink:inst|counter[17] ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.091      ;
-; 3.871 ; led_blink:inst|counter[17] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.092      ;
-; 3.908 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[8]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.129      ;
-; 3.938 ; led_blink:inst|counter[24] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.159      ;
-; 3.993 ; led_blink:inst|counter[24] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.214      ;
-; 3.994 ; led_blink:inst|counter[24] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.215      ;
-; 4.046 ; led_blink:inst|counter[23] ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.267      ;
-; 4.054 ; led_blink:inst|counter[23] ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.275      ;
-; 4.055 ; led_blink:inst|counter[23] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.276      ;
-; 4.059 ; led_blink:inst|counter[22] ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.280      ;
-; 4.079 ; led_blink:inst|counter[19] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.300      ;
-; 4.116 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.337      ;
-; 4.119 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.340      ;
-; 4.120 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.341      ;
-; 4.188 ; led_blink:inst|counter[23] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.409      ;
-; 4.194 ; led_blink:inst|counter[23] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.415      ;
-; 4.217 ; led_blink:inst|counter[18] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.438      ;
-; 4.249 ; led_blink:inst|counter[23] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.470      ;
-; 4.250 ; led_blink:inst|counter[23] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.471      ;
-; 4.267 ; led_blink:inst|counter[24] ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.488      ;
-; 4.299 ; led_blink:inst|counter[17] ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.520      ;
-; 4.307 ; led_blink:inst|counter[17] ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.528      ;
-; 4.308 ; led_blink:inst|counter[17] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.529      ;
-; 4.325 ; led_blink:inst|counter[10] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.546      ;
-; 4.328 ; led_blink:inst|counter[10] ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.549      ;
-; 4.329 ; led_blink:inst|counter[10] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.550      ;
-; 4.331 ; led_blink:inst|counter[24] ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.552      ;
-; 4.337 ; led_blink:inst|counter[24] ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.558      ;
-; 4.367 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.588      ;
-; 4.370 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.591      ;
-; 4.371 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.592      ;
-; 4.425 ; led_blink:inst|counter[22] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.646      ;
-; 4.441 ; led_blink:inst|counter[17] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.662      ;
-; 4.447 ; led_blink:inst|counter[17] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.668      ;
-; 4.502 ; led_blink:inst|counter[17] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.723      ;
-; 4.503 ; led_blink:inst|counter[17] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.724      ;
-; 4.523 ; led_blink:inst|counter[23] ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.744      ;
-; 4.548 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.769      ;
-; 4.548 ; led_blink:inst|counter[21] ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.769      ;
-; 4.554 ; led_blink:inst|counter[24] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.775      ;
-; 4.556 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.777      ;
-; 4.557 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.778      ;
-; 4.587 ; led_blink:inst|counter[23] ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.808      ;
-; 4.593 ; led_blink:inst|counter[23] ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.814      ;
-; 4.624 ; led_blink:inst|counter[4]  ; led_blink:inst|counter[5]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.845      ;
-; 4.643 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[3]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.864      ;
-; 4.690 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.911      ;
-; 4.696 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.917      ;
-; 4.723 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[5]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.944      ;
-; 4.741 ; led_blink:inst|counter[18] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.962      ;
-; 4.744 ; led_blink:inst|counter[19] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.965      ;
-; 4.747 ; led_blink:inst|counter[19] ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.968      ;
-; 4.747 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.968      ;
-; 4.748 ; led_blink:inst|counter[19] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.969      ;
-; 4.750 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.971      ;
-; 4.751 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.972      ;
-; 4.751 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.972      ;
-; 4.752 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.973      ;
-; 4.757 ; led_blink:inst|counter[10] ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.978      ;
-; 4.765 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[4]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.986      ;
-; 4.765 ; led_blink:inst|counter[10] ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.986      ;
-; 4.766 ; led_blink:inst|counter[10] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.987      ;
-; 4.776 ; led_blink:inst|counter[17] ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.997      ;
-; 4.799 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.020      ;
-; 4.803 ; led_blink:inst|counter[21] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.024      ;
-; 4.807 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.028      ;
-; 4.808 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.029      ;
-; 4.810 ; led_blink:inst|counter[23] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.031      ;
-; 4.829 ; led_blink:inst|counter[10] ; led_blink:inst|counter[10] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.050      ;
-; 4.840 ; led_blink:inst|counter[17] ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.061      ;
-; 4.846 ; led_blink:inst|counter[17] ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.067      ;
-; 4.899 ; led_blink:inst|counter[10] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.120      ;
-; 4.905 ; led_blink:inst|counter[10] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.126      ;
-; 4.914 ; led_blink:inst|counter[16] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.135      ;
-; 4.917 ; led_blink:inst|counter[16] ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.138      ;
-; 4.918 ; led_blink:inst|counter[16] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.139      ;
-; 4.941 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.162      ;
-; 4.947 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.168      ;
-; 4.960 ; led_blink:inst|counter[10] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.181      ;
-; 4.961 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[2]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.182      ;
+; 1.078 ; led_blink:inst|state[1]    ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.299      ;
+; 2.125 ; led_blink:inst|state[0]    ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.346      ;
+; 2.842 ; led_blink:inst|counter[4]  ; led_blink:inst|counter[4]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.063      ;
+; 3.350 ; led_blink:inst|counter[22] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.571      ;
+; 3.375 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.596      ;
+; 3.376 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.597      ;
+; 3.497 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.718      ;
+; 3.658 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[3]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.879      ;
+; 3.723 ; led_blink:inst|counter[3]  ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.944      ;
+; 3.723 ; led_blink:inst|counter[3]  ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.944      ;
+; 3.824 ; led_blink:inst|counter[23] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.045      ;
+; 3.825 ; led_blink:inst|counter[23] ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.046      ;
+; 3.946 ; led_blink:inst|counter[23] ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.167      ;
+; 4.054 ; led_blink:inst|counter[20] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.275      ;
+; 4.066 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[4]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.287      ;
+; 4.111 ; led_blink:inst|counter[24] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.332      ;
+; 4.163 ; led_blink:inst|counter[16] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.384      ;
+; 4.172 ; led_blink:inst|counter[23] ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.393      ;
+; 4.172 ; led_blink:inst|counter[23] ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.393      ;
+; 4.176 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.397      ;
+; 4.180 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.401      ;
+; 4.181 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.402      ;
+; 4.186 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.407      ;
+; 4.187 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.408      ;
+; 4.201 ; led_blink:inst|counter[18] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.422      ;
+; 4.226 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.447      ;
+; 4.277 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.498      ;
+; 4.278 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.499      ;
+; 4.302 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.523      ;
+; 4.322 ; led_blink:inst|counter[13] ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.543      ;
+; 4.437 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.658      ;
+; 4.438 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.659      ;
+; 4.439 ; led_blink:inst|counter[22] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.660      ;
+; 4.446 ; led_blink:inst|counter[3]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.667      ;
+; 4.468 ; led_blink:inst|counter[14] ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.689      ;
+; 4.518 ; led_blink:inst|counter[15] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.739      ;
+; 4.519 ; led_blink:inst|counter[15] ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.740      ;
+; 4.528 ; led_blink:inst|counter[5]  ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.749      ;
+; 4.528 ; led_blink:inst|counter[5]  ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.749      ;
+; 4.554 ; led_blink:inst|counter[6]  ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.775      ;
+; 4.625 ; led_blink:inst|counter[23] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.846      ;
+; 4.635 ; led_blink:inst|counter[23] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.856      ;
+; 4.636 ; led_blink:inst|counter[23] ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.857      ;
+; 4.640 ; led_blink:inst|counter[15] ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.861      ;
+; 4.675 ; led_blink:inst|counter[23] ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.896      ;
+; 4.679 ; led_blink:inst|counter[17] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.900      ;
+; 4.680 ; led_blink:inst|counter[17] ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.901      ;
+; 4.686 ; led_blink:inst|counter[22] ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.907      ;
+; 4.726 ; led_blink:inst|counter[23] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.947      ;
+; 4.727 ; led_blink:inst|counter[23] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.948      ;
+; 4.768 ; led_blink:inst|state[0]    ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.989      ;
+; 4.801 ; led_blink:inst|counter[17] ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.022      ;
+; 4.818 ; led_blink:inst|counter[18] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.039      ;
+; 4.866 ; led_blink:inst|counter[15] ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.087      ;
+; 4.866 ; led_blink:inst|counter[15] ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.087      ;
+; 4.886 ; led_blink:inst|counter[23] ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.107      ;
+; 4.887 ; led_blink:inst|counter[23] ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.108      ;
+; 4.893 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[0]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.114      ;
+; 4.895 ; led_blink:inst|counter[23] ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.116      ;
+; 4.915 ; led_blink:inst|counter[4]  ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.136      ;
+; 4.979 ; led_blink:inst|counter[8]  ; led_blink:inst|counter[8]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.200      ;
+; 4.981 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.202      ;
+; 4.991 ; led_blink:inst|counter[17] ; led_blink:inst|counter[17] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.212      ;
+; 4.991 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.212      ;
+; 4.992 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.213      ;
+; 5.027 ; led_blink:inst|counter[1]  ; led_blink:inst|counter[4]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.248      ;
+; 5.027 ; led_blink:inst|counter[17] ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.248      ;
+; 5.027 ; led_blink:inst|counter[17] ; led_blink:inst|state[1]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.248      ;
+; 5.027 ; led_blink:inst|counter[23] ; led_blink:inst|counter[23] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.248      ;
+; 5.031 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[13] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.252      ;
+; 5.053 ; led_blink:inst|counter[14] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.274      ;
+; 5.057 ; led_blink:inst|counter[15] ; led_blink:inst|counter[15] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.278      ;
+; 5.069 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[4]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.290      ;
+; 5.082 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.303      ;
+; 5.083 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.304      ;
+; 5.101 ; led_blink:inst|counter[0]  ; led_blink:inst|counter[4]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.322      ;
+; 5.118 ; led_blink:inst|state[1]    ; led_blink:inst|state[0]    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.339      ;
+; 5.151 ; led_blink:inst|counter[12] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.372      ;
+; 5.158 ; led_blink:inst|counter[14] ; led_blink:inst|counter[15] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.379      ;
+; 5.163 ; led_blink:inst|counter[24] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.384      ;
+; 5.164 ; led_blink:inst|counter[24] ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.385      ;
+; 5.187 ; led_blink:inst|counter[18] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.408      ;
+; 5.200 ; led_blink:inst|counter[20] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.421      ;
+; 5.212 ; led_blink:inst|counter[18] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.433      ;
+; 5.241 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[2]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.462      ;
+; 5.242 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[21] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.463      ;
+; 5.243 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[20] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.464      ;
+; 5.251 ; led_blink:inst|counter[5]  ; led_blink:inst|counter[24] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.472      ;
+; 5.285 ; led_blink:inst|counter[24] ; led_blink:inst|counter[14] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.506      ;
+; 5.296 ; led_blink:inst|counter[9]  ; led_blink:inst|counter[9]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.517      ;
+; 5.313 ; led_blink:inst|counter[10] ; led_blink:inst|counter[12] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.534      ;
+; 5.314 ; led_blink:inst|counter[10] ; led_blink:inst|counter[6]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.535      ;
+; 5.319 ; led_blink:inst|counter[15] ; led_blink:inst|counter[19] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.540      ;
+; 5.329 ; led_blink:inst|counter[15] ; led_blink:inst|counter[18] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.550      ;
+; 5.330 ; led_blink:inst|counter[11] ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.551      ;
+; 5.330 ; led_blink:inst|counter[15] ; led_blink:inst|counter[11] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.551      ;
+; 5.343 ; led_blink:inst|counter[10] ; led_blink:inst|counter[10] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.564      ;
+; 5.353 ; led_blink:inst|counter[16] ; led_blink:inst|counter[22] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.574      ;
+; 5.357 ; led_blink:inst|counter[2]  ; led_blink:inst|counter[3]  ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.578      ;
+; 5.368 ; led_blink:inst|counter[13] ; led_blink:inst|counter[16] ; CLK          ; CLK         ; 0.000        ; 0.000      ; 5.589      ;
 +-------+----------------------------+----------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -460,9 +460,9 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; LED1      ; CLK        ; 11.647 ; 11.647 ; Rise       ; CLK             ;
-; LED2      ; CLK        ; 12.291 ; 12.291 ; Rise       ; CLK             ;
-; LED3      ; CLK        ; 12.390 ; 12.390 ; Rise       ; CLK             ;
+; LED1      ; CLK        ; 10.996 ; 10.996 ; Rise       ; CLK             ;
+; LED2      ; CLK        ; 10.608 ; 10.608 ; Rise       ; CLK             ;
+; LED3      ; CLK        ; 10.397 ; 10.397 ; Rise       ; CLK             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -471,9 +471,9 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; LED1      ; CLK        ; 10.625 ; 10.625 ; Rise       ; CLK             ;
-; LED2      ; CLK        ; 11.269 ; 11.269 ; Rise       ; CLK             ;
-; LED3      ; CLK        ; 11.368 ; 11.368 ; Rise       ; CLK             ;
+; LED1      ; CLK        ; 10.646 ; 10.646 ; Rise       ; CLK             ;
+; LED2      ; CLK        ; 9.554  ; 9.554  ; Rise       ; CLK             ;
+; LED3      ; CLK        ; 10.049 ; 10.049 ; Rise       ; CLK             ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -482,7 +482,7 @@ No paths to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; CLK        ; CLK      ; 913      ; 0        ; 0        ; 0        ;
+; CLK        ; CLK      ; 914      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -492,7 +492,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; CLK        ; CLK      ; 913      ; 0        ; 0        ; 0        ;
+; CLK        ; CLK      ; 914      ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -529,7 +529,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Aug 02 23:23:07 2025
+    Info: Processing started: Sat Aug 02 18:29:21 2025
 Info: Command: quartus_sta Blinking_3_LEDs -c Blinking_3_LEDs
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -543,14 +543,14 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name CLK CLK
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -7.626
+Info (332146): Worst-case setup slack is -7.510
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -7.626      -184.470 CLK 
-Info (332146): Worst-case hold slack is 1.928
+    Info (332119):    -7.510      -180.209 CLK 
+Info (332146): Worst-case hold slack is 1.078
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     1.928         0.000 CLK 
+    Info (332119):     1.078         0.000 CLK 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.289
@@ -561,8 +561,8 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4515 megabytes
-    Info: Processing ended: Sat Aug 02 23:23:08 2025
+    Info: Peak virtual memory: 4507 megabytes
+    Info: Processing ended: Sat Aug 02 18:29:22 2025
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
