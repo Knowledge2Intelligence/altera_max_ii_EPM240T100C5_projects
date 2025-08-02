@@ -1,0 +1,4 @@
+set tool_name "ModelSim-Altera (Verilog)"
+set corner_file_list {
+	{{"Slow Model"} {Independent_LED_Toggle_with_Push_Buttons.vo Independent_LED_Toggle_with_Push_Buttons_v.sdo}}
+}

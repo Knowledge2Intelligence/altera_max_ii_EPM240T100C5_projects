@@ -1,0 +1,25 @@
+module button_led (
+    input clk,          // Clock input (required for sequential logic)
+    input button1,      // Active-low button input (0 = pressed)
+    input button2,      // Active-low button input (0 = pressed)
+    input button3,      // Active-low button input (0 = pressed)
+    output reg led1,    // LED output (1 = ON)
+    output reg led2,    // LED output (1 = ON)
+    output reg led3     // LED output (1 = ON)
+);
+
+// Enable internal weak pull-up resistors for buttons
+// (Simulates Arduino's INPUT_PULLUP)
+assign button1 = button1 ? 1'b1 : 1'b1;  // Weak pull-up
+assign button2 = button2 ? 1'b1 : 1'b1;  // Weak pull-up
+assign button3 = button3 ? 1'b1 : 1'b1;  // Weak pull-up
+
+// LED control logic
+always @(posedge clk) begin
+    // Direct control - LED ON when button pressed (active-low)
+    led1 <= ~button1;  // LED1 ON when button1=0 (pressed)
+    led2 <= ~button2;  // LED2 ON when button2=0 (pressed)
+    led3 <= ~button3;  // LED3 ON when button3=0 (pressed)
+end
+
+endmodule

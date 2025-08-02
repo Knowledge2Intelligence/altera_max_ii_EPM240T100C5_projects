@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera projects/Controlling_Triple_LED_using_Momentary_Switch_Control/Controlling_Triple_LED_using_Momentary_Switch_Control.bdf
+source_file = 1, C:/altera projects/Controlling_Triple_LED_using_Momentary_Switch_Control/Controlling_Triple_LED_using_Momentary_Switch_Control.v
+source_file = 1, C:/altera projects/Controlling_Triple_LED_using_Momentary_Switch_Control/output_files/Chain1.cdf
+source_file = 1, C:/altera projects/Controlling_Triple_LED_using_Momentary_Switch_Control/db/Controlling_Triple_LED_using_Momentary_Switch_Control.cbx.xml
+design_name = Controlling_Triple_LED_using_Momentary_Switch_Control
+instance = comp, \CLK~I , CLK, Controlling_Triple_LED_using_Momentary_Switch_Control, 1
+instance = comp, \BUTTON1~I , BUTTON1, Controlling_Triple_LED_using_Momentary_Switch_Control, 1
+instance = comp, \inst|led1 , inst|led1, Controlling_Triple_LED_using_Momentary_Switch_Control, 1
+instance = comp, \BUTTON2~I , BUTTON2, Controlling_Triple_LED_using_Momentary_Switch_Control, 1
+instance = comp, \inst|led2 , inst|led2, Controlling_Triple_LED_using_Momentary_Switch_Control, 1
+instance = comp, \BUTTON3~I , BUTTON3, Controlling_Triple_LED_using_Momentary_Switch_Control, 1
+instance = comp, \inst|led3 , inst|led3, Controlling_Triple_LED_using_Momentary_Switch_Control, 1
+instance = comp, \LED1~I , LED1, Controlling_Triple_LED_using_Momentary_Switch_Control, 1
+instance = comp, \LED2~I , LED2, Controlling_Triple_LED_using_Momentary_Switch_Control, 1
+instance = comp, \LED3~I , LED3, Controlling_Triple_LED_using_Momentary_Switch_Control, 1

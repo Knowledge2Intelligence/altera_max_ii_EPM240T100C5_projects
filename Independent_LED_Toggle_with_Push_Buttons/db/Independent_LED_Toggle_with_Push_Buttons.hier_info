@@ -1,0 +1,28 @@
+|Independent_LED_Toggle_with_Push_Buttons
+LED1 <= button_led_toggle:inst.led1
+CLK => button_led_toggle:inst.clk
+BUTTON1 => button_led_toggle:inst.button1
+BUTTON2 => button_led_toggle:inst.button2
+BUTTON3 => button_led_toggle:inst.button3
+LED2 <= button_led_toggle:inst.led2
+LED3 <= button_led_toggle:inst.led3
+
+
+|Independent_LED_Toggle_with_Push_Buttons|button_led_toggle:inst
+clk => button3_prev.CLK
+clk => button2_prev.CLK
+clk => button1_prev.CLK
+clk => led3~reg0.CLK
+clk => led2~reg0.CLK
+clk => led1~reg0.CLK
+button1 => button1_prev.DATAIN
+button1 => always0.IN1
+button2 => button2_prev.DATAIN
+button2 => always0.IN1
+button3 => button3_prev.DATAIN
+button3 => always0.IN1
+led1 <= led1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led2 <= led2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led3 <= led3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

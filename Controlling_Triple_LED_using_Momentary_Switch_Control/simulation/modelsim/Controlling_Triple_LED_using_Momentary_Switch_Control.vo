@@ -1,0 +1,259 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+
+// DATE "08/02/2025 18:58:54"
+
+// 
+// Device: Altera EPM240T100C5 Package TQFP100
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Controlling_Triple_LED_using_Momentary_Switch_Control (
+	LED1,
+	CLK,
+	BUTTON1,
+	BUTTON2,
+	BUTTON3,
+	LED2,
+	LED3);
+output 	LED1;
+input 	CLK;
+input 	BUTTON1;
+input 	BUTTON2;
+input 	BUTTON3;
+output 	LED2;
+output 	LED3;
+
+// Design Ports Information
+// BUTTON1	=>  Location: PIN_69,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// CLK	=>  Location: PIN_12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// BUTTON2	=>  Location: PIN_67,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// BUTTON3	=>  Location: PIN_66,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// LED1	=>  Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// LED2	=>  Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// LED3	=>  Location: PIN_71,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Controlling_Triple_LED_using_Momentary_Switch_Control_v.sdo");
+// synopsys translate_on
+
+wire \CLK~combout ;
+wire \BUTTON1~combout ;
+wire \inst|led1~regout ;
+wire \BUTTON2~combout ;
+wire \inst|led2~regout ;
+wire \BUTTON3~combout ;
+wire \inst|led3~regout ;
+
+
+// Location: PIN_12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \CLK~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\CLK~combout ),
+	.padio(CLK));
+// synopsys translate_off
+defparam \CLK~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_69,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \BUTTON1~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\BUTTON1~combout ),
+	.padio(BUTTON1));
+// synopsys translate_off
+defparam \BUTTON1~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X6_Y4_N2
+maxii_lcell \inst|led1 (
+// Equation(s):
+// \inst|led1~regout  = DFFEAS((((!\BUTTON1~combout ))), GLOBAL(\CLK~combout ), VCC, , , , , , )
+
+	.clk(\CLK~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\BUTTON1~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst|led1~regout ),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst|led1 .lut_mask = "00ff";
+defparam \inst|led1 .operation_mode = "normal";
+defparam \inst|led1 .output_mode = "reg_only";
+defparam \inst|led1 .register_cascade_mode = "off";
+defparam \inst|led1 .sum_lutc_input = "datac";
+defparam \inst|led1 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_67,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \BUTTON2~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\BUTTON2~combout ),
+	.padio(BUTTON2));
+// synopsys translate_off
+defparam \BUTTON2~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X7_Y3_N5
+maxii_lcell \inst|led2 (
+// Equation(s):
+// \inst|led2~regout  = DFFEAS((((!\BUTTON2~combout ))), GLOBAL(\CLK~combout ), VCC, , , , , , )
+
+	.clk(\CLK~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\BUTTON2~combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst|led2~regout ),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst|led2 .lut_mask = "0f0f";
+defparam \inst|led2 .operation_mode = "normal";
+defparam \inst|led2 .output_mode = "reg_only";
+defparam \inst|led2 .register_cascade_mode = "off";
+defparam \inst|led2 .sum_lutc_input = "datac";
+defparam \inst|led2 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_66,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \BUTTON3~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\BUTTON3~combout ),
+	.padio(BUTTON3));
+// synopsys translate_off
+defparam \BUTTON3~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X7_Y4_N9
+maxii_lcell \inst|led3 (
+// Equation(s):
+// \inst|led3~regout  = DFFEAS((((!\BUTTON3~combout ))), GLOBAL(\CLK~combout ), VCC, , , , , , )
+
+	.clk(\CLK~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\BUTTON3~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst|led3~regout ),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \inst|led3 .lut_mask = "00ff";
+defparam \inst|led3 .operation_mode = "normal";
+defparam \inst|led3 .output_mode = "reg_only";
+defparam \inst|led3 .register_cascade_mode = "off";
+defparam \inst|led3 .sum_lutc_input = "datac";
+defparam \inst|led3 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \LED1~I (
+	.datain(\inst|led1~regout ),
+	.oe(vcc),
+	.combout(),
+	.padio(LED1));
+// synopsys translate_off
+defparam \LED1~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \LED2~I (
+	.datain(\inst|led2~regout ),
+	.oe(vcc),
+	.combout(),
+	.padio(LED2));
+// synopsys translate_off
+defparam \LED2~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_71,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \LED3~I (
+	.datain(\inst|led3~regout ),
+	.oe(vcc),
+	.combout(),
+	.padio(LED3));
+// synopsys translate_off
+defparam \LED3~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule

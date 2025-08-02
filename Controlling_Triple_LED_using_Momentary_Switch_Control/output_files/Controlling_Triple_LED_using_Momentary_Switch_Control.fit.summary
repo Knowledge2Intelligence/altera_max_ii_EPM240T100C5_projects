@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sat Aug 02 18:58:50 2025
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : Controlling_Triple_LED_using_Momentary_Switch_Control
+Top-level Entity Name : Controlling_Triple_LED_using_Momentary_Switch_Control
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 3 / 240 ( 1 % )
+Total pins : 7 / 80 ( 9 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
